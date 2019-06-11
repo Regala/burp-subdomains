@@ -85,6 +85,8 @@ class ScannerMenu(IContextMenuFactory):
             else:
                 self.scannerInstance._callbacks.issueAlert(
                     "The selected request is null.")
+
+        subs = sorted(subs)
         clipboardContent = ""
         for s in subs:
             clipboardContent = clipboardContent + s + "\n"
