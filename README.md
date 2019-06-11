@@ -1,4 +1,4 @@
-# Burp Sub domains extension
+# Burp Sub Domains extension
 
 A very simple, straightforward extension to export sub domains from Burp using a context menu option. 
 
