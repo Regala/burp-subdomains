@@ -1,5 +1,4 @@
 # Burp Sub domains extension
-Burp Suite extension to easily export sub domains
 
 A very simple, straightforward extension to export sub domains from Burp using a context menu option. 
 
