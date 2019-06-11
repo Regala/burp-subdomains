@@ -1,9 +1,9 @@
-# burp-subdomains
+# Burp Sub domains extension
 Burp Suite extension to easily export sub domains
 
 A very simple, straightforward extension to export sub domains from Burp using a context menu option. 
 
-___ video ___
+![](http://recordit.co/qnpcbcsJH6)
 
 Unbestown to many, Burp has amazing passive gathering capabilities that allows to easily discover sub domains related to a target you're assessing. These often only come up after browsing and using the target features extensively. Some of them are only linked - i.e. are not necessarily requested, which make them even more interesting for recon purposes.
 
