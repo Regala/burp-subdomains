@@ -23,7 +23,6 @@ try:
 
     from threading import Thread, Event
 
-    #from urllib.parse import urlparse - python3
     from urlparse import urlparse
 
     import sys
@@ -36,8 +35,7 @@ except ImportError as e:
     print e
     print "Failed to load dependencies. This issue maybe caused by using an unstable Jython version."
 
-VERSION = '0.1'
-# BBAC represent
+VERSION = '1.0'
 
 
 class BurpExtender(IBurpExtender, ITab, ClipboardOwner):
@@ -45,14 +43,12 @@ class BurpExtender(IBurpExtender, ITab, ClipboardOwner):
         print "Loading..."
 
         self._callbacks = callbacks
-        self._callbacks.setExtensionName('Burp Sub Domains')
-        # self._callbacks.registerScannerCheck(self)
-        # self._callbacks.registerExtensionStateListener(self)
+        self._callbacks.setExtensionName('Subdomain Extractor')
         self._helpers = callbacks.getHelpers()
 
         self.scannerMenu = ScannerMenu(self)
         callbacks.registerContextMenuFactory(self.scannerMenu)
-        print "Sub Domains custom menu loaded"
+        print "Subdomain Extractor custom menu loaded"
         
     
 class ScannerMenu(IContextMenuFactory):
